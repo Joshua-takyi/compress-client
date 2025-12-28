@@ -226,10 +226,10 @@ export default function Compressor() {
                         Optimizing Engine
                       </p>
                       <p className="text-[9px] font-mono text-zinc-500 uppercase tracking-tight">
-                        Applying Gzip-compatible algorithms via Go backend
+                        Applying Gzip-compatible algorithm
                       </p>
                     </div>
-                    <div className="w-48 h-[1px] bg-[#1a1a1a] relative overflow-hidden">
+                    <div className="w-48 h-1 bg-[#1a1a1a] relative overflow-hidden">
                       <motion.div
                         initial={{ left: "-100%" }}
                         animate={{ left: "100%" }}
@@ -238,7 +238,7 @@ export default function Compressor() {
                           repeat: Infinity,
                           ease: "easeInOut",
                         }}
-                        className="absolute top-0 bottom-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent"
+                        className="absolute top-0 bottom-0 w-1/2 bg-linear-to-r from-transparent via-white/40 to-transparent"
                       />
                     </div>
                   </motion.div>
@@ -337,7 +337,7 @@ export default function Compressor() {
                           className="bg-zinc-100 text-black h-8 rounded-none text-[10px] font-bold uppercase tracking-widest px-4 hover:bg-white"
                           startContent={<Download size={12} />}
                         >
-                          Download Asset
+                          Download
                         </Button>
                       </div>
                     </motion.div>
@@ -353,7 +353,7 @@ export default function Compressor() {
                 Squeeze Engine
               </span>
               <span className="text-[9px] font-mono uppercase tracking-widest">
-                Go-1.22
+                Go-1.25.
               </span>
             </div>
             <p className="text-[9px] uppercase font-bold tracking-widest">
