@@ -15,10 +15,10 @@ export default function Compressor() {
     setHasMounted(true);
   }, []);
 
-  const apiUrl =
-    process.env.NODE_ENV === "production"
-      ? process.env.API_URL
-      : "http://localhost:8080";
+  const apiUrl = import.meta.env.PROD
+    ? import.meta.env.PUBLIC_API_URL
+    : "http://localhost:8080";
+
   const handleFileChange = (e) => {
     const selected = e.target.files[0];
     if (selected) {
