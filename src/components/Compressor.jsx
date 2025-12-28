@@ -16,10 +16,9 @@ export default function Compressor() {
   }, []);
 
   const apiUrl =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:8080"
-      : "https://squeeze.sh";
-
+    process.env.NODE_ENV === "production"
+      ? process.env.API_URL
+      : "http://localhost:8080";
   const handleFileChange = (e) => {
     const selected = e.target.files[0];
     if (selected) {
