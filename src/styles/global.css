@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  --color-accent: #3b82f6;
+}
+
+@layer base {
+  body {
+    background-color: black;
+    color: #ededed;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.tool-border {
+  border: 1px solid #2e2e2e;
+}
+
+.tool-card {
+  background-color: #0a0a0a;
+  border: 1px solid #2e2e2e;
+  border-radius: 0;
+}
