@@ -334,6 +334,7 @@ export default function Compressor() {
                           as="a"
                           href={result.downloadUrl}
                           download
+                          target="_blank"
                           className="bg-zinc-100 text-black h-8 rounded-none text-[10px] font-bold uppercase tracking-widest px-4 hover:bg-white"
                           startContent={<Download size={12} />}
                         >
